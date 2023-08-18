@@ -61,3 +61,8 @@ mongoose.connect(process.env.MONGO_URL,{
     // User.insertMany(users)
     // Post.insertMany(posts)
 }).catch((err)=>console.log(err)) 
+
+app.get("/", (req, res) => {
+    res.send("Hello, world!");
+  });
+  
