@@ -52,7 +52,7 @@ app.use("/auth",authRoutes);
 app.use("/users",usersRoutes)
 app.use("/posts",postRoutes)
 //Mongoose
-const PORT=process.env.PORT || 6001
+const PORT = 8000
 mongoose.connect(process.env.MONGO_URL,{
  
 }).then(()=>{
