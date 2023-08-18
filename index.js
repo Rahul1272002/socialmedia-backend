@@ -53,7 +53,7 @@ app.use("/users",usersRoutes)
 app.use("/posts",postRoutes)
 //Mongoose
 const PORT = 8000
-mongoose.connect(process.env.MONGO_URL,{
+mongoose.connect("mongodb+srv://rahulmaji4955:RQ6Y9i2IhcDqHYdU@cluster0.l4aufb6.mongodb.net/",{
  
 }).then(()=>{
     app.listen(PORT,()=>console.log(`server port:${PORT}`))
